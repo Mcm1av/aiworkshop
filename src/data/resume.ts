@@ -1,90 +1,87 @@
-const experience = [
-  {
-    role: "Head of Product",
-    organization: "Caucell",
-    location: "Driggs, ID",
-    dates: "2026",
-    highlights: [
-      "Cold prospect internationally 30–50 new clients daily and partners primarily in the immunology sector",
-      "Manage blood samples in a wet lab from collection preparation, shipping, RNA extraction, and DNA sequencing",
-      "Day-to-day startup operations from finance, accounting, sales, administration, and operational management",
-    ],
-  },
-  {
-    role: "Sales Representative",
-    organization: "Jaguar Land Rover of OKC",
-    location: "Oklahoma City, OK",
-    dates: "2024 – 2025",
-    highlights: [
-      "Constantly rank in top 3 position in overall sales each month since starting and over $1.2M in car sales per month",
-      "2024 Finalist for the Customer Love award from Jaguar Land Rover Annual Global Supplier Excellence Awards",
-      "Ranked in top 5% of all 150+ salespeople across 6+ internal metrics for sales effectiveness across multiple brands",
-      "2024 and 2025 – Perfect CSI score month-over-month",
-    ],
-  },
-  {
-    role: "Sales Representative / Finance Manager",
-    organization: "Mercedes-Benz & Volvo of OKC",
-    location: "Oklahoma City, OK",
-    dates: "2015 – 2024",
-    highlights: [
-      "Achieved and maintained a top 3 position in overall sales each year for 9 years and closed a total of $62M in car sales",
-      "Promoted to finance manager for closing the most unit sales from 2022; 77% conversion rate on upsells in role",
-      "Directed all Volvo inbound leads and managed the entire lifecycle; recorded a 400% increase in the Volvo closing ratio",
-      "Dominated 2024 sales targets: ranked #1 in Year-to-Date units sold; 85 cars sold, 78k average price, $6.8M in sales",
-    ],
-  },
-  {
-    role: "Mortgage Banker",
-    organization: "American Mortgage Bank",
-    location: "Oklahoma City, OK",
-    dates: "2020 – 2024",
-    highlights: [
-      "Facilitated over $37.5M in mortgage transactions; 50+ deals with an average transaction enterprise value of $750k",
-      "Implemented solutions for non-QM clients in 8 situations (self-employed, jumbo loans, rental properties, and others)",
-      "Cultivated new business through lead generation channels with realtors, insurance agents, lawyers, and local bankers",
-      "Originated $250k–$1.5M mortgages for 5 loan types (49 states), for new and used residential properties up to $2M",
-    ],
-  },
-  {
-    role: "MedTech Startup Co-Founder",
-    organization: "Vesalius Med, LLC",
-    location: "Oklahoma City, OK",
-    dates: "2015 – 2021",
-    highlights: [
-      "Founded and exited a MedTech firm to detect abnormal cells in bladder cancer patients by testing urine in lieu of blood",
-      "Presented to high-profile investors and secured weekly meetings with biomedical firms, VCs, and Fortune 100 leaders",
-      "Leveraged proprietary intellectual property, utility patents, and 9,000 lines of code to achieve a competitive valuation",
-      "Collaborated with 2 other co-founders to create a comprehensive business plan with a focus on biomedical screening",
-    ],
-  },
-];
-
-const skills = [
-  "Account Management",
-  "B2C Sales Cycle",
-  "Sales Forecasting",
-  "Project Management",
-  "Marketing Strategy",
-  "Trade Shows / Events",
-  "Business Consulting",
-  "Customer Service",
-  "Sales Operations",
-  "Strategic Partnerships",
-  "Software Solutions",
-  "CRM / QuickBase",
-  "Entrepreneurial KPIs",
-  "Mortgage Origination",
-  "Lead Conversion",
-];
-
-const education = [
-  {
-    school: "University of Oklahoma",
-    location: "Norman, OK",
-    degree: "Bachelor of Science; Multidisciplinary Studies",
-    detail: "Concentration: Petroleum Investment Relations",
-  },
-];
-
-export { experience, skills, education };
+export const resume = {
+  name: "Makailav McLean",
+  title: "Information Security Professional",
+  location: "Fayetteville, NC",
+  email: "mmcleanlav27@gmail.com",
+  summary:
+    "Innovative, hard-working, and dedicated Information Technology professional with a Bachelor of Science in Industrial Technology with a concentration in Information and Cybersecurity Technology. Seeking a challenging position in the Information Security field where I can use my education, skills, and knowledge to help organizations safeguard their sensitive information and implement strong security measures.",
+  experience: [
+    {
+      role: "Technology Support Analyst II",
+      organization: "Harnett County Schools",
+      location: "Lillington, NC",
+      dates: "March 2024 – Present",
+      bullets: [
+        "Performs tasks as assigned by the Chief Technology Officer and/or Technology Director",
+        "Network wiring – installation and termination",
+        "Deploys new hardware such as desktop computers, peripherals, and network electronics",
+        "Ensures the maintenance of all computers, software, and local area networks by monitoring performance",
+        "Read and interpret schematics, wiring diagrams, and manuals",
+        "Operates standard and specialized electronic devices in testing and troubleshooting computers and other technology-related equipment",
+        "Uses a work-order tracking system for routine repair and maintenance of equipment",
+      ],
+    },
+    {
+      role: "Lead Remote Network Admin",
+      organization: "East Carolina University",
+      location: "Greenville, NC",
+      dates: "Jan 2023 – Dec 2023",
+      bullets: [
+        "Provided end-user support for infrastructure troubleshooting, diagnosis, and resolution",
+        "Cabled and configured network and console into firewalls, switches and routers",
+        "Installed, configured, and maintained ethernet switches PDUs, and other network equipment in the lab",
+        "Monitored the laboratory network and systems to ensure reliable operation",
+        "Maintained licenses (VMware, NetLab, etc.) and their distribution",
+      ],
+    },
+    {
+      role: "End-User Analyst",
+      organization: "East Carolina University",
+      location: "Greenville, NC",
+      dates: "Jan 2022 – Dec 2023",
+      bullets: [
+        "Researched, analyzed and reported on different operation systems",
+        "Assisted with Microsoft Office installations, networks/wireless troubleshooting, and repair/replacement of defective parts",
+        "Managed systems maintenance, upgrade, and install updates for Windows servers for better optimization",
+        "Performed feature revisions and adjustments based on the end-user experience",
+        "Analyzed client and business specifications and researched a multiple system approach to generate technological solutions",
+      ],
+    },
+  ],
+  skills: [
+    { name: "Systems & Troubleshooting", items: ["Troubleshooting", "Documentation", "Configuration", "Network Wiring", "VMWare"] },
+    { name: "Operating Systems", items: ["Windows 10 & 11", "Mac", "Linux"] },
+    { name: "Networking", items: ["Routing and Switching", "Subnetting", "VPN", "Wireshark", "Active Directory", "Firewalls", "Routers & Switches"] },
+    { name: "Security & Forensics", items: ["Intrusion Detection", "Digital Forensics", "FTK Imager"] },
+    { name: "Enterprise & Admin Tools", items: ["Microsoft Office 365", "Ansible", "PuTTY", "Google Admin", "Project Management", "Basic COBOL"] },
+  ],
+  education: [
+    {
+      degree: "Bachelor of Science in Industrial Technology",
+      detail: "Concentration in Information and Cybersecurity Technology • Minor in Industrial Technology Management",
+      school: "East Carolina University, Greenville, NC",
+      dates: "Dec 2023",
+      honors: "GPA: 3.7 | Magna Cum Laude",
+    },
+    {
+      degree: "Associate of Applied Science in Information Technology / PC Support and Services",
+      detail: null,
+      school: "Fayetteville Technical Community College, Fayetteville, NC",
+      dates: "May 2021",
+      honors: "GPA: 3.7 | Honors",
+    },
+  ],
+  coursework: [
+    "Intrusion Detection Technology",
+    "Enterprise Server Technology",
+    "Fundamental Network Security",
+    "Industrial Supervision",
+    "Wireless Communication",
+    "Digital Forensics",
+    "Red Hat Administration 3: Linux Automation",
+  ],
+  certifications: [
+    { name: "Introduction into Access & Identity Management", dates: "Dec 2023" },
+    { name: "ISC2 – Certified in Cybersecurity (CC)", dates: "July 2025" },
+  ],
+} as const;

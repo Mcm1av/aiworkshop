@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ThemeScript from "@/components/theme-script";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,21 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aslan Maleki — Sales Leader & Business Executive",
+  title: "Makailav McLean – Information Security Professional",
   description:
-    "Sales leader and business executive with a decade of revenue growth, $200M in sales, and expertise in account management, strategic partnerships, and business development.",
+    "Information Security professional in Fayetteville, NC. BS in Industrial Technology with a concentration in Information and Cybersecurity Technology, with hands-on experience in network administration, troubleshooting, and endpoint support.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ThemeScript />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

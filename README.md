@@ -1,23 +1,19 @@
-# Aslan Maleki — Personal Resume Website
+# aiworkshop – Personal Resume Website
 
-Single-page personal resume website for **Aslan Maleki**, built with Next.js
-(App Router), TypeScript, and Tailwind CSS. Ready to deploy on Vercel.
+Single-page resume website for **Makailav McLean**, built with Next.js (App Router), TypeScript, and Tailwind CSS, and deployed on Vercel.
 
-## Live site
-
-- Live URL: *pending Vercel deployment — see Deployment notes below*
-- Source: https://github.com/Mcm1av/aiworkshop
+- **Live site:** https://aiworkshop-mcm1av.vercel.app
+- **Source:** https://github.com/Mcm1av/aiworkshop
 
 ## Content
 
-All content is drawn from Aslan Maleki's resume. Professional summary,
-experience, skills, and education mirror the resume exactly.
+All content is drawn from the attached resume (M. McLean's IT Resume). It includes a header with contact links, a summary, experience, skills, education, related coursework, certifications, and a footer. Nothing about the content was invented.
 
-## Privacy
+### Privacy notes
 
-- No residential or street address is published.
-- No phone number is published.
-- Only the email that appears on the resume (`aslanmaleki@gmail.com`) is shown.
+- **Removed:** phone number `(910) 729-8978` — the resume contained it, but the PRD only permits publishing a phone number if the attendee wrote `INCLUDE PHONE`, which was left blank.
+- **Not present in resume:** no residential or street address was found in the resume, so nothing there needed removal. City/state (Fayetteville, NC) is shown.
+- Email `mmcleanlav27@gmail.com` is included because it already appears in the resume.
 
 ## Run locally
 
@@ -28,31 +24,25 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Build & lint
+Production build + lint:
 
 ```bash
-npm run build
 npm run lint
+npm run build
 ```
 
-## Deliberately skipped
+## Theme
 
-- Contact form (out of scope for phase 1)
-- Additional routes / pages
-- Analytics (intentionally excluded)
-- Component/animation libraries (kept minimal per requirements)
-- Vercel deployment could not be completed from this environment because no
-  `VERCEL_TOKEN` is available (connecting requires an interactive `vercel login`
-  or a token). The repo is public and push-ready.
+The site has a light/dark toggle. On first visit it follows the visitor's system color preference; the toggle is remembered via `localStorage`. Tailwind's `dark:` variant is driven by a `.dark` class on `<html>` (see `tailwind.config.ts` and `src/components/theme-provider.tsx`).
 
-To deploy:
-1. Import `github.com/Mcm1av/aiworkshop` at https://vercel.com/new
-2. Framework preset: Next.js (defaults apply)
-3. Deploy — the project builds clean with `npm run build` and passes `npm run lint`.
+## Deployment
 
-## Stack
+The site is connected to Vercel from the GitHub repo, so every push to `main` triggers a build.
 
-- Next.js 16 (App Router, static prerender)
-- TypeScript
-- Tailwind CSS
-- Light/dark theme toggle honoring system preference, persisted in localStorage
+## Deliberately skipped / notes
+
+- No contact form, CMS, analytics, authentication, or multi-page routes (all out of scope for phase 1).
+- No LinkedIn, GitHub, or portfolio link was present on the attached resume, so the header only exposes the email link.
+- The "Lead Remote Network Admin" bullet was lightly edited for spelling/grammar ("ethernet switches PDUs, and other network equipment in the lab") without changing its meaning.
+- Styling uses Tailwind CSS v3 (`tailwindcss ^3.4.17`) with the class-based `dark` variant — same design tokens/utilities, chosen for deterministic native-postcss builds in the workshop sandbox.
+- If a durable Vercel account token is provided later, the deployment can be re-linked to produce a custom alias.
