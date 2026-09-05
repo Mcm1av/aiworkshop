@@ -2,8 +2,10 @@
 
 Single-page resume website for **Makailav McLean**, built with Next.js (App Router), TypeScript, and Tailwind CSS, and deployed on Vercel.
 
-- **Live site:** https://aiworkshop-mcm1av.vercel.app
+- **Live site:** https://temporary-turbo-eclipse-fpk0hyb.vercel.app
 - **Source:** https://github.com/Mcm1av/aiworkshop
+
+> **Live-URL note:** the current live URL is an anonymous Vercel deployment (expires); a durable alias `aiworkshop-mcm1av.vercel.app` is pending a linked Vercel account token.
 
 ## Content
 
