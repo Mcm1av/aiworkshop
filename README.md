@@ -14,8 +14,9 @@ All content is drawn from the attached resume (M. McLean's IT Resume). It includ
 ### Privacy notes
 
 - **Removed:** phone number `(910) 729-8978` — the resume contained it, but the PRD only permits publishing a phone number if the attendee wrote `INCLUDE PHONE`, which was left blank.
+- **Removed:** email — no email address is shown anywhere on the site, per the attendee's request.
 - **Not present in resume:** no residential or street address was found in the resume, so nothing there needed removal. City/state (Fayetteville, NC) is shown.
-- Email `mmcleanlav27@gmail.com` is included because it already appears in the resume.
+- Contact is handled through LinkedIn instead of email: `https://www.linkedin.com/in/makailav-m-781a80229`.
 
 ## Run locally
 
@@ -44,7 +45,7 @@ The site is connected to Vercel from the GitHub repo, so every push to `main` tr
 ## Deliberately skipped / notes
 
 - No contact form, CMS, analytics, authentication, or multi-page routes (all out of scope for phase 1).
-- No LinkedIn, GitHub, or portfolio link was present on the attached resume, so the header only exposes the email link.
+- Contact is exposed via a LinkedIn link (attendee-provided) as the only direct contact channel; no email is published.
 - The "Lead Remote Network Admin" bullet was lightly edited for spelling/grammar ("ethernet switches PDUs, and other network equipment in the lab") without changing its meaning.
 - Styling uses Tailwind CSS v3 (`tailwindcss ^3.4.17`) with the class-based `dark` variant — same design tokens/utilities, chosen for deterministic native-postcss builds in the workshop sandbox.
 - If a durable Vercel account token is provided later, the deployment can be re-linked to produce a custom alias.

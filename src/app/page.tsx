@@ -1,7 +1,7 @@
 import { resume } from "@/data/resume";
 import { ThemeToggle } from "@/components/theme-toggle";
 
-function EmailIcon() {
+function LinkedinIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -13,8 +13,9 @@ function EmailIcon() {
       aria-hidden="true"
       className="h-5 w-5"
     >
-      <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
     </svg>
   );
 }
@@ -111,15 +112,14 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href={`mailto:${resume.email}`}
+                  href={resume.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
                 >
-                  <EmailIcon />
-                  Get in touch
+                  <LinkedinIcon />
+                  Connect on LinkedIn
                 </a>
-                <span className="text-sm text-zinc-500 dark:text-zinc-400">
-                  {resume.email}
-                </span>
               </div>
             </div>
           </div>
@@ -314,11 +314,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
-                href={`mailto:${resume.email}`}
+                href={resume.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
               >
-                <EmailIcon />
-                {resume.email}
+                <LinkedinIcon />
+                Connect on LinkedIn
               </a>
               <span className="inline-flex items-center gap-1.5 text-sm text-zinc-500 dark:text-zinc-400">
                 <MapPinIcon />

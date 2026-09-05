@@ -2,7 +2,7 @@ export const resume = {
   name: "Makailav McLean",
   title: "Information Security Professional",
   location: "Fayetteville, NC",
-  email: "mmcleanlav27@gmail.com",
+  linkedin: "https://www.linkedin.com/in/makailav-m-781a80229",
   summary:
     "Innovative, hard-working, and dedicated Information Technology professional with a Bachelor of Science in Industrial Technology with a concentration in Information and Cybersecurity Technology. Seeking a challenging position in the Information Security field where I can use my education, skills, and knowledge to help organizations safeguard their sensitive information and implement strong security measures.",
   experience: [
