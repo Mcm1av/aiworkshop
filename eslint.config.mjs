@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Raw inline script injected verbatim into the HTML document head.
+    "src/components/theme-init.js",
   ]),
 ]);
 
