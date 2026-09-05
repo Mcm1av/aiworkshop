@@ -1,11 +1,11 @@
 # Aslan Maleki — Personal Resume Website
 
 Single-page personal resume website for **Aslan Maleki**, built with Next.js
-(App Router), TypeScript, and Tailwind CSS, and deployed on Vercel.
+(App Router), TypeScript, and Tailwind CSS. Ready to deploy on Vercel.
 
 ## Live site
 
-- Live URL: `<deployed URL>`
+- Live URL: *pending Vercel deployment — see Deployment notes below*
 - Source: https://github.com/Mcm1av/aiworkshop
 
 ## Content
@@ -41,6 +41,14 @@ npm run lint
 - Additional routes / pages
 - Analytics (intentionally excluded)
 - Component/animation libraries (kept minimal per requirements)
+- Vercel deployment could not be completed from this environment because no
+  `VERCEL_TOKEN` is available (connecting requires an interactive `vercel login`
+  or a token). The repo is public and push-ready.
+
+To deploy:
+1. Import `github.com/Mcm1av/aiworkshop` at https://vercel.com/new
+2. Framework preset: Next.js (defaults apply)
+3. Deploy — the project builds clean with `npm run build` and passes `npm run lint`.
 
 ## Stack
 
